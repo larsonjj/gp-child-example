@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7733a7f10e038cf259beb51ded926e1",
+    "content-hash": "6383ff23b2fff7e787604657a275c175",
     "packages": [
         {
             "name": "composer/installers",
@@ -242,16 +242,16 @@
         },
         {
             "name": "pantheon-systems/wordpress-composer",
-            "version": "5.9.2",
+            "version": "5.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wordpress-composer.git",
-                "reference": "693eb3d03738e3e31aeac6cecb299c1a7fea1586"
+                "reference": "ebe1aaaf06e21a8b804daf4d67879af888725ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/693eb3d03738e3e31aeac6cecb299c1a7fea1586",
-                "reference": "693eb3d03738e3e31aeac6cecb299c1a7fea1586",
+                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/ebe1aaaf06e21a8b804daf4d67879af888725ccf",
+                "reference": "ebe1aaaf06e21a8b804daf4d67879af888725ccf",
                 "shasum": ""
             },
             "require": {
@@ -269,10 +269,10 @@
             ],
             "description": "WordPress for Pantheon with a composer.json file.",
             "support": {
-                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/5.9.2",
+                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/5.9.1",
                 "issues": "https://github.com/pantheon-systems/wordpress-composer/issues"
             },
-            "time": "2022-03-11T04:11:03+00:00"
+            "time": "2022-02-22T18:11:08+00:00"
         },
         {
             "name": "phpoption/phpoption",
