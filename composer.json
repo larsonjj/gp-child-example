@@ -17,7 +17,7 @@
     "php": ">=7.3",
     "composer/installers": "^v1.3.0",
     "pantheon-systems/quicksilver-pushback": "^2",
-    "pantheon-systems/wordpress-composer": "5.8.3",
+    "pantheon-systems/wordpress-composer": "5.9.2",
     "roots/wp-password-bcrypt": "^1.0.0",
     "vlucas/phpdotenv": "^3.1.0",
     "johnpbloch/wordpress-core-installer": "2.0.0 as 0.1.2",

@@ -24,7 +24,7 @@ add_action(
 	'wp_enqueue_scripts',
 	function () {
 		// remove block library css
-		// wp_dequeue_style( 'wp-block-library' );
+		 wp_dequeue_style( 'wp-block-library' );
 		// remove comment reply JS
 		wp_dequeue_script( 'comment-reply' );
 	}
