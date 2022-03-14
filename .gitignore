@@ -49,7 +49,7 @@ web/private/scripts/quicksilver
 web/wp-content/plugins/**/vendor
 !web/wp-content/plugins/generateblocks-pro/
 !web/wp-content/plugins/gp-premium/
-!web/wp-content/themes/generatepress-child-m1
+!web/wp-content/themes/gp-child-m1
 web/wp-content/object-cache.php
 !web/redirects.php
 initial_export
