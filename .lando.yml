@@ -1,0 +1,19 @@
+﻿name: gp-child-example
+recipe: pantheon
+config:
+  framework: wordpress
+  site: gp-child-example
+  id: b6a804ae-ced8-4340-954a-88fd3c4dfb03
+  composer_version: "2.2.7"
+tooling:
+  pull:
+    description: Updates to the lando pull command
+    options:
+      code:
+        # The default is to NEVER pull code down from lando
+        default: none
+  # We will NEVER use lando to push code to Pantheon. Disable the command
+  push:
+    description: Limits the lando push command
+    options:
+      code: disabled

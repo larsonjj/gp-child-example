@@ -38,7 +38,23 @@ web/private/scripts/quicksilver
 
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
-
+!plugins/*.zip
+!plugins
+!web/wp-content/object-cache.php
+!web/wp-content/themes/theme-m1
+!web/*.pdf
+!web/*.png
+!web/*.jpeg
+!web/*.jpg
+web/wp-content/plugins/**/vendor
+!web/wp-content/plugins/generateblocks-pro/
+!web/wp-content/plugins/gp-premium/
+!web/wp-content/themes/generatepress-child-m1
+web/wp-content/object-cache.php
+!web/redirects.php
+initial_export
+/.idea/
+*.iml
 
 
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
@@ -67,7 +83,6 @@ web/wp-content/advanced-cache.php
 web/wp-content/wp-cache-config.php
 web/sitemap.xml
 web/sitemap.xml.gz
-*.log
 
 # @TODO writable paths
 web/wp-content/cache/
