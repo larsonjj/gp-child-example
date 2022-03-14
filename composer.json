@@ -30,6 +30,7 @@
     "wpackagist-plugin/wp-native-php-sessions": ">=0.6.9",
     "wpackagist-plugin/enable-media-replace": "^3.6.0",
     "wpackagist-plugin/wp-redis": "dev-trunk",
+    "wpackagist-plugin/generateblocks": "^1.4.2",
     "wpackagist-plugin/advanced-custom-fields": "^5.12",
     "wpackagist-plugin/safe-svg": "^1.9.10",
     "wpackagist-plugin/wp-show-posts": "^1.1.3",
