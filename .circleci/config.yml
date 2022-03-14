@@ -105,7 +105,7 @@ jobs:
 
       - run:
           name: run PHP build step
-          command: ./.ci/build/php
+          command: sh .ci/build/php
 
       - save_cache:
           key: vendor-{{ checksum "composer.lock" }}
@@ -141,7 +141,7 @@ jobs:
       # Deploy to Pantheon
       - run:
           name: deploy to Pantheon
-          command: ./.ci/deploy/pantheon/dev-multidev
+          command: sh .ci/deploy/pantheon/dev-multidev
 
   behat_test:
     <<: *defaults
@@ -161,15 +161,15 @@ jobs:
 
       - run:
           name: prepare for Behat testing
-          command: ./.ci/test/behat/initialize
+          command: sh .ci/test/behat/initialize
 
       - run:
           name: run acceptance tests with Behat
-          command: ./.ci/test/behat/run
+          command: sh .ci/test/behat/run
 
       - run:
           name: clean up after Behat
-          command: ./.ci/test/behat/cleanup
+          command: sh .ci/test/behat/cleanup
           when: always
 
       - save_cache:
@@ -200,7 +200,7 @@ jobs:
 
       - run:
           name: visual regression test
-          command: ./.ci/test/visual-regression/run
+          command: sh .ci/test/visual-regression/run
 
       - store_artifacts:
           path: /tmp/artifacts
