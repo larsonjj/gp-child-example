@@ -30,8 +30,8 @@ if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) && file_exists( $rootPath . '/.env
 /**
  * Disallow on server file edits
  */
-//define( 'DISALLOW_FILE_EDIT', true );
-//define( 'DISALLOW_FILE_MODS', true );
+define( 'DISALLOW_FILE_EDIT', true );
+define( 'DISALLOW_FILE_MODS', true );
 
 /**
  * Force SSL
@@ -164,7 +164,7 @@ if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ):
 
 	// FS writes aren't permitted in test or live, so we should let WordPress know to disable relevant UI
 	if ( in_array( $_ENV['PANTHEON_ENVIRONMENT'], array( 'test', 'live' ) ) && ! defined( 'DISALLOW_FILE_MODS' ) ) :
-//		define( 'DISALLOW_FILE_MODS', true );
+		define( 'DISALLOW_FILE_MODS', true );
 	endif;
 
 endif;
