@@ -183,7 +183,14 @@ define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
  */
 $table_prefix = getenv( 'DB_PREFIX' ) !== false ? getenv( 'DB_PREFIX' ) : 'wp_';
 
+/** Disable theme FTP form */
+define('FS_METHOD', 'direct');
+define('FS_CHMOD_DIR', ( 0755 & ~ umask() ) );
 define('FS_CHMOD_FILE', ( 0755 & ~ umask() ) );
+define('FTP_BASE', __DIR__);
+define('FTP_CONTENT_DIR', __DIR__ .'/wp-content/');
+define('FTP_PLUGIN_DIR', __DIR__ .'/wp-content/plugins/');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
