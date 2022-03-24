@@ -185,6 +185,8 @@ $table_prefix = getenv( 'DB_PREFIX' ) !== false ? getenv( 'DB_PREFIX' ) : 'wp_';
 
 /* That's all, stop editing! Happy blogging. */
 
+define('FS_CHMOD_FILE', ( 0755 & ~ umask() ) );
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
